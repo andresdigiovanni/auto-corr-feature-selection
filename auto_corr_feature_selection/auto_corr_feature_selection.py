@@ -77,7 +77,7 @@ class AutoCorrFeatureSelection:
             # Get the column with the highest number of matches
             max_column = max(
                 correlation_counts,
-                key=lambda x: (correlation_counts[x], self.__data.columns[x]),
+                key=lambda x, cc=correlation_counts: (cc[x], self.__data.columns[x]),
                 default=None,
             )
 
