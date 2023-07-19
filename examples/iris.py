@@ -10,7 +10,7 @@ iris_df = pd.read_csv(dataset_url)
 auto_corr = AutoCorrFeatureSelection(iris_df)
 
 # select low correlated columns
-selected_columns = auto_corr.select_columns_above_threshold(threshold=0.9)
+selected_columns = auto_corr.select_columns_above_threshold(threshold=0.85)
 iris_filtered_df = iris_df[selected_columns]
 
 # summary
