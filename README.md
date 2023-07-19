@@ -2,6 +2,9 @@
 
 Automatically select the most relevant features based on correlation.
 
+[![PyPI Latest Release](https://img.shields.io/pypi/v/auto-corr-feature-selection.svg)](https://pypi.org/project/auto-corr-feature-selection/)
+[![PyPI Downloads](https://img.shields.io/pypi/dm/auto-corr-feature-selection.svg?label=PyPI%20downloads)](https://pypi.org/project/auto-corr-feature-selection/)
+
 
 # How it works
 
