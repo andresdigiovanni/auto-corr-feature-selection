@@ -1,14 +1,14 @@
 [tool.poetry]
 name = "auto_corr_feature_selection"
-version = "0.1.0"
+version = "0.1.1"
 description = "Automatically select the most relevant features based on correlation."
 authors = ["Andres Di Giovanni <andresdigiovanni@gmail.com>"]
 readme = "README.md"
 packages = [{include = "auto_corr_feature_selection"}]
 
 [tool.poetry.dependencies]
-python = ">=3.8"
-pandas = "^2.0.3"
+python = ">=3.9"
+pandas = ">1.5.0"
 numpy = "^1.25.1"
 scikit-learn = "^1.3.0"
 
