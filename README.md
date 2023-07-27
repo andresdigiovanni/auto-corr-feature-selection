@@ -49,7 +49,7 @@ By following these steps, the AutoCorrFeatureSelection class automates the proce
 
 # Example
 
-Examples can be found in [examples/](examples/).
+Examples can be found in [examples/](https://github.com/andresdigiovanni/auto-corr-feature-selection/tree/main/examples).
 
 ```python
 
