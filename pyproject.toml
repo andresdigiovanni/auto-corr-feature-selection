@@ -4,7 +4,7 @@ version = "0.1.2"
 description = "Automatically select the most relevant features based on correlation."
 authors = ["Andrés Di Giovanni <andresdigiovanni@gmail.com>"]
 readme = "README.md"
-license = { file = "LICENSE" }
+license = "MIT"
 packages = [{include = "auto_corr_feature_selection"}]
 
 [tool.poetry.dependencies]
