@@ -8,7 +8,6 @@ from auto_corr_feature_selection.auto_corr_feature_selection import (
 
 # Tests that the correlation matrix is calculated correctly
 def test_correlation_matrix_calculation():
-
     # Arrange
     data = pd.DataFrame({"A": [1, 2, 3], "B": [4, 5, 6], "C": [7, 8, 9]})
 
@@ -27,7 +26,6 @@ def test_correlation_matrix_calculation():
 
 # Tests that select_columns_above_threshold returns the correct columns
 def test_select_columns_above_threshold():
-
     # Arrange
     data = pd.DataFrame({"A": [1, 2, 3], "B": [4, 5, 6], "C": [7, 8, 9]})
 
@@ -43,7 +41,6 @@ def test_select_columns_above_threshold():
 
 # Tests that the function handles an empty dataframe
 def test_empty_dataframe_handling():
-
     # Arrange
     data = pd.DataFrame()
 
@@ -59,7 +56,6 @@ def test_empty_dataframe_handling():
 
 # Tests that the function handles a dataframe with only one column
 def test_single_column_dataframe_handling():
-
     # Arrange
     data = pd.DataFrame({"A": [1, 2, 3]})
 
@@ -75,7 +71,6 @@ def test_single_column_dataframe_handling():
 
 # Tests that the function handles a dataframe with only string columns
 def test_string_dataframe_handling():
-
     # Arrange
     data = pd.DataFrame(
         {"A": ["a", "b", "c"], "B": ["d", "e", "f"], "C": ["g", "h", "i"]}
@@ -93,7 +88,6 @@ def test_string_dataframe_handling():
 
 # Tests that the function handles a dataframe with missing values
 def test_missing_values_handling():
-
     # Arrange
     data = pd.DataFrame({"A": [1, 2, np.nan], "B": [4, np.nan, 6], "C": [7, 8, 9]})
 

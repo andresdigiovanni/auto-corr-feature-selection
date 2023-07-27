@@ -60,12 +60,10 @@ class AutoCorrFeatureSelection:
         remaining_columns = [i for i in range(len(self.__data.columns))]
 
         while len(remaining_columns):
-
             # Store the correlation hit count for each column
             correlation_counts = {}
 
             for i in remaining_columns:
-
                 # Count the number of columns with a correlation greater than the threshold
                 corr_matrix = self.correlation_matrix()
                 count = np.sum(abs(corr_matrix.iloc[i]) >= threshold)
@@ -77,7 +75,7 @@ class AutoCorrFeatureSelection:
             # Get the column with the highest number of matches
             max_column = max(
                 correlation_counts,
-                key=lambda x, cc=correlation_counts: (cc[x], self.__data.columns[x]),
+                key=lambda x: (correlation_counts[x], self.__data.columns[x]),
                 default=None,
             )
 

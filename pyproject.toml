@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "auto_corr_feature_selection"
-version = "0.1.1"
+version = "0.1.2"
 description = "Automatically select the most relevant features based on correlation."
 authors = ["Andrés Di Giovanni <andresdigiovanni@gmail.com>"]
 readme = "README.md"
