@@ -1,13 +1,17 @@
+import numpy as np
 import pandas as pd
+from sklearn.datasets import load_iris
 
 from auto_corr_feature_selection import AutoCorrFeatureSelection
 
 # download data
-dataset_url = "https://gist.githubusercontent.com/netj/8836201/raw/6f9306ad21398ea43cba4f7d537619d0e07d5ae3/iris.csv"
-iris_df = pd.read_csv(dataset_url)
+iris = load_iris()
+iris_df = pd.DataFrame(
+    data=np.c_[iris["data"], iris["target"]], columns=iris["feature_names"] + ["target"]
+)
 
 # set up auto correlation
-auto_corr = AutoCorrFeatureSelection(iris_df)
+auto_corr = AutoCorrFeatureSelection(iris_df.drop(columns=["target"]))
 
 # select low correlated columns
 selected_columns = auto_corr.select_columns_above_threshold(threshold=0.85)
